@@ -1,0 +1,20 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.3"
+        id="html5easy"
+        >
+
+ 
+       <name>EasyHtml5</name>
+       <content src="index.html"/>
+       <author>Gorro</author>
+       <icon src="easyicon.png"/>
+       
+	   			<rim:loadingScreen backgroundImage="splash.png" onFirstLaunch="true">
+            <rim:transitionEffect type="fadeIn"/>
+        </rim:loadingScreen>
+       <feature id="blackberry.app">
+               <param name="orientation" value="portrait" />
+       </feature>
+	   
+</widget>

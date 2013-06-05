@@ -1,0 +1,582 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>EasyHTML5</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body>
+
+  
+<div data-role="page" id="index">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1 align="center">EasyHTML5</h1>
+  </div>
+  <div data-role="content">
+  
+  <h2 align="center">This is an easy guide of html5</h2> 
+  <h2 align="center">HTML5 is The New HTML Standard</h2>
+  
+
+ <div class="ui-grid-a">
+ <div class="ui-block-a"><br><br><img src="descarga.png" width="150" height="150"></div>
+ 
+ <div class="ui-block-b"><h4 align="center">HTML5</h4>
+ <p align="right">
+New Elements<br>
+New Attributes<br>
+Full CSS3 Support<br>
+Video and Audio<br>
+2D/3D Graphics<br>
+Local Storage<br>
+Local SQL Database<br>
+Web Applications<br>
+</p></div>
+  </div>
+<h3 align="left">What is HTML5?</h3>
+<p>HTML5 will be the new standard for HTML.<br><br>
+
+The previous version of HTML, HTML 4.01, came in 1999. The web has changed a lot since then.<br><br>
+
+HTML5 is still a work in progress. However, the major browsers support many of the new HTML5 elements and APIs.</p>
+
+<div align="center">
+<a data-role="button" href="#comenzar" data-theme="e" data-inline="true">Begin</a>
+</div>
+  
+    </div>
+    <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+           <li>
+              <a href="#index" data-transition="pop" data-theme="a" class="ui-btn-active">Home</a>
+           </li>
+           <li>
+              <a href="#examples" data-transition="pop" data-theme="a">Examples</a>
+           </li>
+           <li>
+              <a href="#resources" data-transition="pop" data-theme="a">Resources</a>
+           </li>
+         </ul>
+    </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="comenzar">
+  <div data-role="header" data-theme="b" data-position="fixed">
+  <a href="#index" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>First Steps</h1>
+  </div>
+  <div data-role="content">
+  
+  <h2 align="center">How Did HTML5 Get Started?</h2>
+<p>
+HTML5 is a cooperation between the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG).<br><br>
+
+WHATWG was working with web forms and applications, and W3C was working with XHTML 2.0. In 2006, they decided to cooperate and create a new version of HTML.<br><br>
+
+<strong>Some rules for HTML5 were established:</strong><br><br>
+
+-New features should be based on <strong>HTML</strong>, <strong>CSS</strong>, <strong>DOM</strong>, and <strong>JavaScript</strong><br>
+-Reduce the need for external plugins (like Flash)<br>
+-Better error handling<br>
+-More markup to replace scripting<br>
+-HTML5 should be device resourcesindependent<br>
+-The development process should be visible to the public<br>
+  </p>
+  
+  <h4>The HTML5 &nbsp; <code>  < !DOCTYPE></code></h4>
+
+In HTML5 there is only one < !doctype> declaration, and it is very simple:<br><br>
+
+<textarea><!DOCTYPE html></textarea>
+
+<h4>Minimum HTML5 Document</h4>
+
+Below is a simple HTML5 document, with the minimum of required tags:<br><br>
+
+<textarea><!DOCTYPE html>
+< html>
+< head>
+< title>Title of the document< /title>
+< /head>
+
+< body>
+The content of the document......
+< /body>
+
+< /html></textarea>
+  
+  </div>
+  
+</div>
+
+<div data-role="page" id="examples" data-theme="c" data-position="fixed">
+  <div data-role="header" data-theme="b">
+    <h1>Examples</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-theme="c">
+      <li><a href="#canvas" data-transition="slidedown">
+        <h3>Canvas</h3>
+        <p>Learn about the tag Canvas</p>
+      </a></li>
+      <li><a href="#svg" data-transition="slidedown">
+        <h3>HTML5 Inline SVG</h3>
+        <p>Learn abaut SVG</p>
+      </a></li>
+      <li><a href="#video" data-transition="slidedown">
+        <h3>Video</h3>
+        <p>Learn about the tag Video</p>
+      </a></li>
+      <li><a href="#audio" data-transition="slidedown">
+        <h3>Audio</h3>
+        <p>Learn about the tag Audio</p>
+      </a></li>
+      <li><a href="#formelements" data-transition="slidedown">
+        <h3>HTML5 Form Elements</h3>
+        <p>Meet the new form elements</p>
+      </a></li>
+      
+    </ul>
+  
+  
+  
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+           <li>
+              <a href="#index" data-transition="pop" data-theme="a">Home</a>
+           </li>
+           <li>
+              <a href="#examples" data-transition="pop" data-theme="a"  class="ui-btn-active">Examples</a>
+           </li>
+           <li>
+              <a href="#resources" data-transition="pop" data-theme="a">Resources</a>
+           </li>
+         </ul>
+    </div>
+    </div>
+  
+</div>
+
+<!--pagina canvas-->
+
+<div data-role="page" id="canvas" data-theme="c">
+  <div data-role="header" data-theme="b" data-position="fixed">
+  <a href="#examples" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>HTML5 Canvas</h1>
+    <a href="#index" data-role="button" data-transition="fade" data-theme="c">Home</a>
+  </div>
+  
+  <!--inicio contenido-->
+  
+  <div data-role="content">
+  <p>The <strong>< canvas></strong> element is used to draw graphics, on the fly, on a web page.<br><br>
+
+Draw a red rectangle, a gradient rectangle, a multicolor rectangle, and some multicolor text onto the canvas
+</p>
+<h4>What is Canvas?</h4>
+
+<p>The HTML5 < canvas> element is used to draw graphics, on the fly, via scripting (usually JavaScript).<br><br>
+
+The < canvas> element is only a container for graphics. You must use a script to actually draw the graphics.<br><br>
+
+Canvas has several methods for drawing paths, boxes, circles, characters, and adding images.<br><br>
+</p>
+<!--inicio botones colapsables-->
+<div data-role="collapsible-set" data-theme="c">
+  <!-- create canvas inicio-->
+  <div data-role="collapsible">
+    <h3>Create a Canvas</h3>
+    <p>
+    A canvas is a rectangular area on an HTML page, and it is specified with the < canvas> element.<br>
+
+Note: By default, the < canvas> element has no border and no content.<br>
+
+The markup looks like this:<br><br>
+<code>< canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">< /canvas></code> 
+    </p>
+    
+    <strong>Note:</strong> Always specify an id attribute (to be referred to in a script), and a width and height attribute to define the size of the canvas.<br><br>
+
+<strong>Tip:</strong> You can have multiple < canvas> elements on one HTML page.<br><br>
+
+To add a border, use the style attribute:<br><br>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #c00000;">
+</canvas>
+    
+  </div>
+  <!--fin de create canvas-->
+  
+  <!-- inicio canvas with javascript-->
+  <div data-role="collapsible" data-collapsed="true">
+    <h3>Draw in the canvas with JavaScript</h3>
+    <p>
+    All drawing on the canvas must be done inside a JavaScript:<br>
+    </p>
+    <code>
+    < script><br>
+var c=document.getElementById("myCanvas");<br>
+var ctx=c.getContext("2d");<br>
+ctx.fillStyle="#FF0000";<br>
+ctx.fillRect(0,0,150,75);<br>
+< /script>
+    </code><br>
+    
+    <canvas id="CanvasJS" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+
+var c=document.getElementById("CanvasJS");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";
+ctx.fillRect(0,0,150,75);
+
+</script>
+    
+  </div>
+  <!--fin canvas with javascript-->
+  <!--inicio canvas text-->
+  <div data-role="collapsible" data-collapsed="true">
+    <h3>Canvas Text</h3>
+    <p>
+    To draw text on a canvas, the most important property and methods are:<br>
+
+font - defines the font properties for text<br>
+fillText(text,x,y) - Draws "filled" text on the canvas<br>
+strokeText(text,x,y) - Draws text on the canvas (no fill)<br>
+Using <code>fillText():</code><br>
+    </p>
+    
+    <code>
+    var c=document.getElementById("myCanvas");<br>
+var ctx=c.getContext("2d");<br>
+ctx.font="30px Arial";<br>
+ctx.fillText("Hello World",10,50);<br>
+    </code>
+    <br>
+    
+    <canvas id="CanvasTx" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c=document.getElementById("CanvasTx");
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.fillText("This is a Text",10,50);
+
+</script>
+    
+  </div>
+  <!--fin canvas text-->
+</div>
+<!--fin botones colapsables-->
+
+
+  </div>
+  <!--fin contenido-->
+</div> 
+<!--fin pagina canvas-->
+
+<!--inicio pagina svg-->
+<div data-role="page" id="svg">
+  <div data-role="header" data-theme="b" data-position="fixed">
+  	<a href="#examples" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>HTML5 Inline SVG</h1>
+    <a href="#index" data-role="button" data-transition="fade" data-theme="c">Home</a>
+  </div>
+  <!--inicio content-->
+  <div data-role="content">
+  
+  <h2>What is SVG?</h2>
+<p>
+<strong>-</strong>SVG stands for Scalable Vector Graphics<br>
+<strong>-</strong>SVG is used to define <strong>vector-based</strong> graphics for the Web<br>
+<strong>-</strong>SVG defines the graphics in <strong>XML format</strong><br>
+<strong>-</strong>SVG graphics do <strong>NOT</strong> lose any quality if they are zoomed or resized<br>
+<strong>-</strong>Every element and every attribute in SVG files can be <strong>animated</strong><br>
+<strong>-</strong>SVG is a W3C recommendation
+  </p>
+  
+  <h2>Embed SVG Directly Into HTML Pages</h2>
+
+<p>In HTML5, you can embed <strong>SVG</strong> elements directly into your HTML page:</p>
+  
+  <code>
+  < svg height="190"><br>
+   < polygon points="100,10 40,180 190,60 10,60 160,180"
+   style="fill:gray;stroke:blue;stroke-width:5;fill-rule:evenodd;"><br>
+  < /svg>
+  </code>
+  <div align="center">
+  <svg  height="190">
+   <polygon points="100,10 40,180 190,60 10,60 160,180"
+   style="fill:gray;stroke:blue;stroke-width:5;fill-rule:evenodd;">
+</svg>
+  </div>
+  </div>
+  <!--fin content-->
+</div>
+<!--fin pagina svg-->
+
+<!--inicio pagina video-->
+<div data-role="page" id="video">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <a href="#examples" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>Video Tag</h1>
+    <a href="#index" data-role="button" data-transition="fade" data-theme="c">Home</a>
+  </div>
+  <!--inicio content-->
+  <div data-role="content">
+  
+  <h1 align="center">Video on the Web</h1>
+<p>
+Until now, there has not been a standard for showing a <strong>video/movie</strong> on a web page.<br><br>
+
+Today, most videos are shown through a plug-in (like flash). However, different browsers <strong>may have different plug-ins.</strong><br><br>
+
+HTML5 defines a new element which specifies a standard way to embed a video/movie on a web page: the <strong>< video> </strong>element.<br>
+</p>
+<h2>HTML5 Video - How It Works</h2>
+
+To show a video in HTML5, this is all you need:<br>
+<code>
+< video width="320" height="240" controls><br>
+  < source src="movie.mp4" type="video/mp4"><br>
+  < source src="movie.ogg" type="video/ogg"><br>
+  Your browser does not support the video tag.<br>
+< /video>
+</code>
+
+<p>
+The control attribute adds video controls, like play, pause, and volume.<br><br>
+
+It is also a good idea to always include width and height attributes. If height and width are set, the space required for the video is reserved when the page is loaded. However, without these attributes, the browser does not know the size of the video, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the video loads).<br><br>
+
+You should also insert text content between the <strong>< video></strong> and <strong>< /video></strong> tags for browsers that do not support the <strong>< video></strong> element.<br><br>
+
+The <strong>< video></strong> element allows multiple <strong>< source></strong> elements. <strong>< source></strong> elements can link to different video files. The browser will use the first recognized format.</p>
+  
+  </div>
+  <!--fin content-->
+  
+</div>
+
+<!-- fin pagina video-->
+
+
+<!-- inicio pagina audio-->
+<div data-role="page" id="audio">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <a href="#examples" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>Audio Tag</h1>
+    <a href="#index" data-role="button" data-transition="fade" data-theme="c">Home</a>
+  </div>
+  <!--inicio content-->
+  <div data-role="content">
+  <h1>Audio on the Web</h1>
+<p>
+Until now, there has not been a standard for playing audio files on a web page.<br><br>
+
+Today, most audio files are played through a plug-in (like flash). However, different browsers may have different plug-ins.<br>
+
+HTML5 defines a new element which specifies a standard way to embed an audio file on a web page: the <strong>< audio></strong> element.<br>
+</p>
+
+<h2>HTML5 Audio - How It Works</h2>
+
+To play an audio file in HTML5, this is all you need:<br>
+
+<code>
+< audio controls><br>
+  < source src="horse.ogg" type="audio/ogg"><br>
+  < source src="horse.mp3" type="audio/mpeg"><br>
+Your browser does not support the audio element.<br>
+< /audio>
+</code>
+
+<p>
+The control attribute adds audio controls, like play, pause, and volume.<br><br>
+
+You should also insert text content between the <strong>< audio></strong> and </audio> tags for browsers that do not support the <strong>< audio></strong> element.<br><br>
+
+The < audio> element allows multiple <strong>< source></strong> elements. <strong>< source></strong>  elements can link to different audio files. The browser will use the first recognized format.
+</p>
+
+  </div>
+  <!--fin content-->
+  
+</div>
+
+<!--fin pagina audio-->
+
+<!--inicio pagina formelements-->
+<div data-role="page" id="formelements">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <a href="#examples" data-role="button" data-transition="flip" data-theme="a">Back</a>
+    <h1>Form Elements in Html5</h1>
+    <a href="#index" data-role="button" data-transition="fade" data-theme="c">Home</a>
+  </div>
+  
+  <!--inicio content-->
+  <div data-role="content">
+  <h1>HTML5 New Form Elements</h1>
+<p>
+HTML5 has the following new form elements:<br><br>
+
+< datalist><br>
+< keygen><br>
+< output><br><br>
+<strong>Note</strong>: Not all major browsers support all the new form elements. However, you can already start using them; If they are not supported, they will behave as regular text fields.
+</p>
+<!--segmento colapsable-->
+<div data-role="collapsible-set">
+  <div data-role="collapsible">
+    <h3>HTML5 < datalist> Element</h3>
+    <p>
+    <p>
+The <strong>< datalist></strong> element specifies a list of pre-defined options for an < input> element.<br><br>
+
+The <strong>< datalist></strong> element is used to provide an "autocomplete" feature on <strong>< input></strong> elements. Users will see a drop-down list of pre-defined options as they input data.<br><br>
+
+Use the <strong>< input></strong> element's list attribute to bind it together with a <strong>< datalist></strong> element.
+</p>
+
+<code>
+< input list="browsers"><br>
+
+< datalist id="browsers"><br>
+  < option value="IE"><br>
+  < option value="Firefox"><br>
+  < option value="Chrome"><br>
+  < option value="Opera"><br>
+  < option value="Safari"><br>
+< /datalist>
+</code>
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+    </p>
+  </div>
+  <div data-role="collapsible" data-collapsed="true">
+    <h3>HTML5 < keygen> Element</h3>
+    <p>
+    The purpose of the <strong>< keygen></strong> element is to provide a secure way to authenticate users.<br><br>
+
+The <strong>< keygen></strong> tag specifies a key-pair generator field in a form.<br><br>
+
+When the form is submitted, two keys are generated, one private and one public.<br><br>
+
+The private key is stored locally, and the public key is sent to the server. The public key could be used to generate a client certificate to authenticate the user in the future.<br><br>
+
+<code>
+< form action="demo_keygen.asp" method="get"><br>
+Username: < input type="text" name="usr_name"><br>
+Encryption: < keygen name="security"><br>
+< input type="submit"><br>
+< /form>
+</code>
+
+    </p>
+  </div>
+  <div data-role="collapsible" data-collapsed="true">
+    <h3>HTML5 < output> Element</h3>
+    <p>
+    The <strong>< output></strong> element represents the result of a calculation (like one performed by a script).<br><br>
+    <code>
+    < form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0<br>
+< input type="range" name="a" value="50">100  +<br>
+< input type="number" name="b" value="50">=<br>
+< output name="x" for="a b">< /output><br>
+< /form>
+    </code>
+    
+    </p>
+  </div>
+</div>
+<!--fin del segmento colapsable-->
+
+
+
+  </div>
+  <!--fin content-->
+  
+</div>
+
+<!--fin pagina formelements-->
+
+<!--inicio pagina resources-->
+<div data-role="page" id="resources">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Resources</h1>
+  </div>
+  <!--inicio content-->
+  <div data-role="content">
+  
+  <h2>If you want more examples visit</h2>
+  <script type="text/javascript">
+  function invokew3s(){
+  var args = new blackberry.invoke.BrowserArguments('http://www.w3schools.com/html/html5_intro.asp');
+  blackberry.invoke.invoke(blackberry.invoke.APP_BROWSER, args);
+  }
+</script>
+  
+  <h1><strong><a href="#" onClick="invokew3s()">w3schools</a></strong></h1>
+  
+  <script type="text/javascript">
+  function invokeJQM(){
+  var args = new blackberry.invoke.BrowserArguments('http://www.jquerymobile.com');
+  blackberry.invoke.invoke(blackberry.invoke.APP_BROWSER, args);
+  }
+</script>
+  
+  <h2>This application was created with jQuery Mobile</h2>
+  <h1><strong><a href="#" onClick="invokeJQM()">jQuey Mobile</a></strong></h1>
+  
+  <h6>If you have suggestions about the application please contact the developer via mail (you'll find in the blackberry world support)</h6>
+  </div>
+  <!--fin content-->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+           <li>
+              <a href="#index" data-transition="pop" data-theme="a">Home</a>
+           </li>
+           <li>
+              <a href="#examples" data-transition="pop" data-theme="a">Examples</a>
+           </li>
+           <li>
+              <a href="#resources" data-transition="pop" data-theme="a" class="ui-btn-active">Resources</a>
+           </li>
+         </ul>
+    </div>
+    </div>
+  
+</div>
+
+
+
+<!--fin pagina resources-->
+
+
+
+</body>
+</html>
