@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FLISoL Aragon </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+	<!-- ------------------inicio header----------------- -->
+   <div class="header">
+  <table width="100%" border="0" cellspacing="0">
+  <tr>
+  <td>
+  		<div align="center">
+  <a href="#">
+  <img src="img/cabecera5.png" alt="logo flisol" name="Insert_logo" id="logo" width="50%" height="50%" />
+        </a>
+       </div>
+  </td>
+  <td align="left">
+ <label class="nav-collapse collapse">Síguenos:</label>
+ <a href="https://www.facebook.com/FlisolFesAragon?fref=ts"><img src="img/facebook.png" width="30%" height="30%"></a>
+ <a href="https://twitter.com/FLISoL_Aragon"><img src="img/twitter.png" width="30%" height="30%"></a>
+  </td>
+  </tr> 
+  </table>
+  
+    
+    <!-- ------------ aqui empieza la navbar responsiva ----------- -->
+    <div class="navbar">
+  		<div class="navbar-inner" >
+    		<div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            	<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+            </a> 
+            <a class="brand" href="index.html">FLISoL</a>
+            	<div class="nav-collapse collapse">
+    				<ul class="nav">  				
+      					<li><a href="que_es_flisol.html">&iquest;Qu&eacute; es el FLISoL?</a></li>
+      					<li><a href="actividades.html">Actividades</a></li>
+                		<li><a href="contacto.html">Contacto</a></li>
+                		<li class="active"><a href="registro.html">Registro</a></li>
+    				</ul>
+            	</div>
+            </div>
+  		</div>
+	</div>
+    <!-- ------------ aqui termina la navbar responsiva ----------- -->
+  
+   </div>
+   <!-- ------------------fin de header--------------------- -->
+   
+   <!-- -------------------inicio content -------------------------- -->
+   
+
+<h1>Registro</h1>
+
+<br>
+
+<div class="row-fluid">
+<div class="span3"></div>
+<div class="span4" >
+<form class="form-horizontal" method="post" action="/servlet/registro.php">
+
+
+
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Nombre</label>
+    <div class="controls">
+      <input type="text" name="nombre" id="Text input" placeholder="Nombre" required>
+    </div>
+  </div>
+  
+  
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">Apellidos</label>
+    <div class="controls">
+      <input type="text" name="apellido" id="Text input" placeholder="Apellidos" required>
+    </div>
+  </div>
+  
+  
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">Email</label>
+    <div class="controls">
+      <input type="email" name="email" id="inputEmail" placeholder="Email" required>
+    </div>
+  </div>
+  
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">Escuela o Empresa de procedencia</label>
+    <div class="controls">
+      <input type="text" name="escuela" placeholder="introduzca su Escuela/Empresa de procedencia" id="procedencia" required>
+    </div>
+  </div>
+  
+  
+  
+      <div class="control-group" >
+
+  
+<label class="control-label" for="inputEmail">Talleres</label>  
+    <div class="controls">
+      <label style="text-align:center;">Por favor verifica que los talleres que inscribas no tengan conflicto de horario</label>
+
+  <select id="taller" name="taller">
+        <option value="Diseño">Diseño con Software Libre 10:30 - 12:30</option>
+        <option value="Android">Desarrollo nativo en Android 10_30 - 12:30</option>
+        <option value="JavaScript">Javascript 11:30 - 13:30</option>
+        <option value="Videojuegos">Creación de Videojuegos para Firefox OS 12:30 - 16:30</option>
+        <option value="Hiram">Creando una App en 4 pasos 13:30 - 14:30</option>
+        <option value="jQuery">Desarrollo de apps con jQuery Mobile 14:30 - 16:30</option>
+        <option value="Pentesting">Pentesting web 16:30 - 18:00</option>
+        <option value="Servidores">Servidores y páginas web con Software Libre 16:30 - 18:00</option>
+</select>
+                        </div>
+   </div>
+	<div align="center">
+	<button onClick="enviar()" type="submit" class="btn btn-warning"> Enviar </button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+
+
+
+  <!-- ---------------------- fin content ---------------------------- -->
+  
+  <!-- --------------------- inicio footer -------------------------- --
+  <div class="modal-footer navbar-fixed-bottom" style="background-color:#F90">
+   
+   <p>Lo que tenga que venir aqui</p>
+   
+   </div>
+   <!-- ------------------------- fin footer ------------------------- -->
+    
+  </div>
+  
+  <script src="enviar.js"></script>
+  <script src="bootstrap/js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
