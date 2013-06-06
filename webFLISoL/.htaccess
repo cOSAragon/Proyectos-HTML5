@@ -1,0 +1,11 @@
+#ErrorDocument 404 /404.html
+DirectoryIndex index.html
+
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^index\.(html|php) / [R=301]
+# /acerca-de es transformado a /acerca-de.html
+#RewriteRule ^([a-z_\-]+) /$1.html [NC]
+# /talleres/inscribir es transformado a /servlet/talleres.php?sol=inscribir
+RewriteRule ^talleres/([a-z]+) /servlet/talleres.php?sol=$1 [NC,L]
