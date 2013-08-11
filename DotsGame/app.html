@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html manifest="circles.appcache">
+<head>
+
+    <meta charset='utf-8'> 
+	
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Circles</title>
+	<link rel="stylesheet" href="app.css">
+	<script type="text/javascript" src="jq.js"></script>
+	<script type="text/javascript" src="g.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+	<div id="menu" class="hidden">
+		<h1>Circles</h1>
+		<p class="b" onclick="newGame()">¡Jugar!</p>
+		<p class="b" onclick="showHelp()">¿Cómo le hago?</p>
+		<p class="p" id="m_hs"></p>
+	</div>
+	<div id="help" class="hidden" onclick="hideHelp()">
+		<h1>Tap-Me!</h1>
+		<p>Cada nivel se añade un nuevo círculo, toca ese círculo para pasar de nivel, si tocas uno incorrecto el juego termina.</p>
+		<p class="p">Toca para continuar</p>
+	</div>
+	<div id="score" class="hidden" onclick="nextLevel()">
+		<h1 id="curscore"></h1>
+		<p id="s_hs"></p>
+		<p class="p">Toca para continuar</p>
+	</div>
+	<div id="lose" class="hidden">
+		<h1>Perdiste</h1>
+		<p>Puntuación:</p>
+		<h1 id="lose_score"></h1>
+		<p class="p u" onclick="newGame()">Nuevo Juego</p>
+		<div onclick="toMenu()">Menú</div>
+	</div>
+	<!--<div id="update" class="hidden">
+		<h1>Update Available</h1>
+		<p class="p u"onclick="cancelUpdate()">install later</p>
+		<div onclick="doUpdate()">install now</div>
+	</div>-->
+	<div id="game"></div>
+</body>
+</html>
