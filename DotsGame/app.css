@@ -1,0 +1,160 @@
+/* Circles
+// Copyright (c) Alan Hardman 2012
+*/
+
+html{-moz-text-size-adjust:none}
+*{
+	-ms-tap-highlight-color: rgba(0,0,0,0);
+	-ms-user-select: none;
+	-ms-touch-callout: none;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+div {
+	-ms-transition: opacity .5s ease;
+}
+.hidden {
+	opacity: 0;
+}
+body {
+	background: #222;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+h1 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica-Light", "Helvetica Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	font-size: 50px;
+	text-align: center;
+}
+p {
+	font-size: 16px;
+	margin: 0;
+	padding: 6px 12px;
+	text-align: center;
+}
+p.b {
+	font-size: 20px;
+}
+p.p {
+	padding-top: 60px;
+}
+p.u {
+	text-decoration: underline;
+}
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 100;
+	background: black;
+}
+#score {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 90;
+	background: white;
+	border-radius: 10px;
+}
+#score h1,#score p {
+	color: #444;
+}
+#help {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 120;
+	background: white;
+	border-radius: 10px;
+}
+#help h1,#help p {
+	color: #222;
+}
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 10;
+	background: black;
+}
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 20;
+	background: black;
+}
+#lose {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 30;
+	background: red;
+	border-radius: 10px;
+}
+#lose div {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: black;
+	border-radius: 7px;
+	color: white;
+}
+#update {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+	z-index: 999;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+#update div {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: black;
+	border-radius: 7px;
+	color: white;
+}
+#update h1,#update p {
+	color: #222;
+}
+#lose div.t,#update div.t {
+	background: #222;
+	-ms-box-shadow: 2px 3px 4px black inset;
+}
+.c {
+	position: absolute;
+	display: block;
+	background: white;
+	border-radius: 40px;
+	border: 2px solid #000;
+	z-index: 16;
+}
