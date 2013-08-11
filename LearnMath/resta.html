@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="buttons.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="bootstrap.min.js"></script>
+<script src="jquery.js"></script>
+<script src="js/resta.js"></script>
+<style>
+
+
+
+</style>
+<title>Resta</title>
+</head>
+
+<body onLoad="llenarResta();" style="background-image: linear-gradient(bottom, rgb(133,227,255) 25%);
+background-image: -o-linear-gradient(bottom, rgb(133,227,255) 25%);
+background-image: -moz-linear-gradient(bottom, rgb(133,227,255) 25%);
+background-image: -webkit-linear-gradient(bottom, rgb(133,227,255) 25%);
+background-image: -ms-linear-gradient(bottom, rgb(133,227,255) 25%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(133,227,255))
+);">
+
+<div align="center" >
+
+<div align="left">
+<a href="index.html" type="button" id="btnReturn" style="width:60px; margin-left:10px;margin-top:20px" class="btn btn-default" >Back</a>
+</div>
+<h2 style="margin-top:-40px;font-family:'letrabonis';color:#283DA3">Subtraction</h2>
+
+</div>
+
+	<div class="row" style="margin-top:50px; margin-bottom:35px;" align="center">
+  <div class="col-4 col-lg-4"><label style="font-size:50px; color:#F2535B; margin-top:-20px" id="dato1Resta"><strong>0</strong></label></div>
+  <div class="col-4 col-lg-4"><label style="font-size:30px; background-color:#177FDD" class="label">-</label></div>
+  <div class="col-4 col-lg-4"><label style="font-size:50px; color:#F2535B; margin-top:-20px" id="dato2Resta"><strong>1</strong></label></div>
+</div>
+<div align="center" style="margin-bottom:30px; margin-top:20px;">
+<label style="font-size:20px;font-family:'letrabonis';color:#283DA3">Write the result</label>
+</div>
+<div align="center" style="margin-top:30px; margin-bottom:40px" >
+	<input type="number" style=" width:100px; height:100px; text-align:center; font-size:40px" placeholder="" class="form-control" placeholder="Escribe tu respuesta" id="resultresta">
+    </div>
+
+<div style="margin-left:20px; margin-right:20px; " >
+  <a role="button" href="#" style="background-color:#F2535B; color:#FFF;" onClick="resta()">Result</a>
+  </div>
+  
+
+
+</body>
+</html>

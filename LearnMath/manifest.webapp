@@ -1,0 +1,15 @@
+{
+    "version": "1.0",
+    "name": "LearnMath",
+    "description": "Easy application for kids to learn basics maths",
+    "launch_path": "/index.html",
+    "icons":{
+    	"48":"iconomediano.png",
+    	"128":"iconogrande.png"
+    },
+    "developer":{
+    	"name":"comunidad Open Source Aragon",
+    	"url":"http://cosa.mobi"
+    },
+    "installs_allowed_from": ["*"]
+}
